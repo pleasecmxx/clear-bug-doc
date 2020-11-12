@@ -6,7 +6,7 @@
 ## 快速开始
 
 ### 引入SDK
-- 1、SDK下载地址: [web-sdk.js](https://log.haitunshenghuo.com)
+- 1、SDK下载地址: [web-sdk.js](https://log.haitunshenghuo.com/vue-clear-bug.min.js.zip)
 
 - 2、在你的Vue工程的main.js中完成SDK挂载
 >代码示例
