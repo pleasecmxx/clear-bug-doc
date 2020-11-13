@@ -12,7 +12,7 @@
 >代码示例
 ```JavaScript
   import Vue from 'vue';
-  import VueClearBug from './views/app/vue-clear-bug-sdk';
+  import VueClearBug from './你的路径/vue-clear-bug.min.js';
   ...
   ...
   Vue.use(VueClearBug)
