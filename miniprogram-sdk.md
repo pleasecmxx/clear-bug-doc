@@ -21,7 +21,7 @@
 
 ### SDK实例暴露的方法
 
-#### 启用SDK init({appKey, appSecret})
+#### 启用SDK init({appKey, appSecret,appVersion?,config?})
 - `appKey` {String} 你创建好应用的appKey
 - `appSecret` {String} 该app对应的密钥
 - `appVersion` {String} 应用当前版本名 *（可选，若不传，默认为1.0.0）*
