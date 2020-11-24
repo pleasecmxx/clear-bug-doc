@@ -1,6 +1,6 @@
 
 
-# vue-clear-bug
+# taro-clear-bug
 - [x] wx > 2.x.x
 - [x] Taro > 2.1.x
 - [x] node > 9.x
