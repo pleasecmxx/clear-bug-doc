@@ -19,8 +19,6 @@
 
 ```
 
->例如： this.$clearBug.xxxx
-
 ### SDK实例暴露的方法
 
 #### 启用SDK init({appKey, appSecret})
@@ -28,7 +26,7 @@
 - `appSecret` {String} 该app对应的密钥
 - `appVersion` {String} 应用当前版本名 *（可选，若不传，默认为1.0.0）*
 - returns void
-> 代码示例 - App.vue *（推荐在App.vue中完成初始化）*
+> 代码示例 - App.jsx *（推荐在App.jsx中完成初始化）*
 ```JavaScript
   import React from 'react';
   import { Component } from 'react';
@@ -43,6 +41,7 @@
 
   class App extends Component ...
 ```
+>初始化成功后，控制台会有相应提示，此时你就可以使用 **global.clearbug** 访问SDK实例
 
 #### 异常上报 errorLog({error,tagName})
 - `error` {String} 异常信息
@@ -57,7 +56,7 @@ try{
   //你需要处理的业务逻辑，例如首页商品数据加载
 }catch(e){
   //捕获到异常之后调用errorLog方法
-  errorLog({
+  global.clearbug.errorLog({
       error: e,
       tagName: '首页商品数据加载',
   })
