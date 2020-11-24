@@ -26,7 +26,7 @@
 #### 启用SDK init({appKey, appSecret})
 - `appKey` {String} 你创建好应用的appKey
 - `appSecret` {String} 该app对应的密钥
-- `appVersion` {String} 应用当前版本名
+- `appVersion` {String} 应用当前版本名 *（可选，若不传，默认为1.0.0）*
 - returns void
 > 代码示例 - App.vue *（推荐在App.vue中完成初始化）*
 ```JavaScript
@@ -44,9 +44,9 @@
   class App extends Component ...
 ```
 
-#### 异常上报 errorLog({err,tag})
-- `err` {String} 异常信息
-- `tag` {String} 你给当前异常场景取得别名（非必填）
+#### 异常上报 errorLog({error,tagName})
+- `error` {String} 异常信息
+- `tagName` {String} 你给当前异常场景取得别名（非必填）
 - returns void <br/>
 *系统会默认收集并聚合error_tag,并在管理后台呈现，未填写具名tag的errorlog将会被统一具名tag: `other`*<br/>
 *SDK不采集用户数据，所有身份识别由SDK内部专门针对用户设备生成UUID指纹信息来跟踪分析用户行为。*<br/>
