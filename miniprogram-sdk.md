@@ -7,7 +7,7 @@
 ## 快速开始
 
 ### 引入SDK
-- 1、SDK下载地址: [clear-bug-miniprogram.js](https://log.haitunshenghuo.com/vue-clear-bug.min.js.zip)
+- 1、SDK下载地址: [clear-bug-miniprogram.js](https://log.haitunshenghuo.com/clear-bug-miniprogram.min.js.zip)
 
 - 2、在你的Taro小程序工程的App.jsx中引入SDK
 >代码示例
@@ -25,6 +25,7 @@
 - `appKey` {String} 你创建好应用的appKey
 - `appSecret` {String} 该app对应的密钥
 - `appVersion` {String} 应用当前版本名 *（可选，若不传，默认为1.0.0）*
+- `config: {logLever: 0 | 1}` {object} SDK 配置 *（可选，logLever = 0 时禁用SDK控制台输出）*
 - returns void
 > 代码示例 - App.jsx *（推荐在App.jsx中完成初始化）*
 ```JavaScript
